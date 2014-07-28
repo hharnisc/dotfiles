@@ -204,9 +204,6 @@ autocmd InsertLeave * set nopaste
 autocmd VimResized * :wincmd =
 autocmd WinEnter * set cursorline
 autocmd WinLeave * set nocursorline
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
-
-nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 
 set undodir=~/.vim/backups
 set undofile
