@@ -64,4 +64,9 @@ fi
 
 PS1="\n💻 :\h 👤 :\u 📂 :\$PWD\$(__git_ps1 \"\n🐙 :%s\")\n💬  "
 
+# check env var YROOT_NAME to see if we are in a yroot
+if [ "x$YROOT_NAME" != "x" ]; then
+  PS1="\n⚓️ :$YROOT_NAME $PS1"
+fi
+
 source ~/.git-prompt.sh
