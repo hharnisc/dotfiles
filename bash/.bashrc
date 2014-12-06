@@ -69,3 +69,14 @@ source ~/.shell_prompt.sh
 source ~/.git-prompt.sh
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home
+
+# homebrew bashrc stuff
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
+export HOMEBREW_CC=gcc-4.4
+ 
+# check env var YROOT_NAME to see if we are in a yroot
+if [ "x$YROOT_NAME" != "x" ]; then
+  PS1="\n⚓️ :$YROOT_NAME $PS1"
+fi
