@@ -21,7 +21,10 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias ls='ls -G'
 alias fn='find . -name'
-alias tmux="TERM=screen-256color-bce tmux"
+alias tmux='TERM=screen-256color-bce tmux'
+
+# the time has come...
+alias vim='nvim'
 
 export HISTCONTROL=ignoredups:erasedups
 shopt -s histappend
@@ -62,11 +65,7 @@ else
   source /etc/bash_completion.d/git
 fi
 
-PS1="\n💻 :\h 👤 :\u 📂 :\$PWD\$(__git_ps1 \"\n🐙 :%s\")\n💬  "
-
-# check env var YROOT_NAME to see if we are in a yroot
-if [ "x$YROOT_NAME" != "x" ]; then
-  PS1="\n⚓️ :$YROOT_NAME $PS1"
-fi
-
+source ~/.shell_prompt.sh
 source ~/.git-prompt.sh
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home
