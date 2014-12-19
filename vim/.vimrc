@@ -8,12 +8,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'bling/vim-airline'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'gregsexton/gitv'
-Plugin 'groenewege/vim-less'
 Plugin 'honza/vim-snippets'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'justinmk/vim-sneak'
@@ -53,6 +51,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Wolfy87/vim-enmasse'
+Plugin 'Wolfy87/vim-expand'
 Plugin 'Yggdroot/indentLine'
 
 call vundle#end()
@@ -68,7 +67,6 @@ let g:indentLine_char = '│'
 let g:indentLine_color_term = 16
 let g:markdown_fenced_languages = ['js=javascript', 'javascript', 'css', 'json=javascript']
 let g:mustache_abbreviations = 1
-let g:sneak#streak = 1
 let g:syntastic_auto_jump = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_echo_current_error = 1
@@ -158,6 +156,7 @@ nmap <leader>d :NERDTreeToggle<cr>
 nmap <leader>f :NERDTreeFind<cr>
 nmap <leader>p :CtrlP<cr>
 nmap <leader>r :CtrlPMRUFiles<cr>
+nmap <leader>e :Expand<cr>
 
 if has("unix")
   let s:uname = system("uname")
