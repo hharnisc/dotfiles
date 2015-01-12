@@ -54,3 +54,5 @@
 [diff]
   tool = Kaleidoscope
 
+[hub]
+	host = git.corp.yahoo.com
