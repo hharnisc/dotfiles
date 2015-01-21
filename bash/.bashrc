@@ -61,8 +61,6 @@ fi
 . ~/.shell_prompt.sh
 . ~/.git-prompt.sh
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home
-
 # homebrew bashrc stuff
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
@@ -73,6 +71,3 @@ export HOMEBREW_CC=gcc-4.4
 if [ "x$YROOT_NAME" != "x" ]; then
   PS1="\n⚓️ :$YROOT_NAME $PS1"
 fi
-
-export GITHUB_HOST=git.corp.yahoo.com
-eval "$(hub alias -s)"
